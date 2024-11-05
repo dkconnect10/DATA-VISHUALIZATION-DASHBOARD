@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4200/api/v1/datas'); // Backend API endpoint
+        const response = await axios.get('http://localhost:4200/api/v1/data/datas'); // Backend API endpoint
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
